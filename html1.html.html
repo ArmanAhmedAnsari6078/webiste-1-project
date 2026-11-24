@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THREADLINE — Everyday Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS ABOVE ₹1,499 <span>•</span> EASY 7-DAY RETURNS</div>
+
+  <header class="site-header">
+    <button class="menu-button" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <a class="brand" href="#">THREAD<span>LINE</span><small>EVERYDAY STREETWEAR</small></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#">MEN</a>
+      <a href="#">WOMEN</a>
+      <a href="#">NEW ARRIVALS</a>
+      <a href="#">COLLECTIONS</a>
+    </nav>
+    <div class="header-actions">
+      <form class="search" action="#">
+        <input type="search" placeholder="Search products..." aria-label="Search products">
+        <button aria-label="Search">⌕</button>
+      </form>
+      <a class="icon-link" href="#" aria-label="Account">♙</a>
+      <a class="icon-link" href="#" aria-label="Wishlist">♡</a>
+      <a class="icon-link cart" href="#" aria-label="Shopping bag">♧<i>0</i></a>
+    </div>
+  </header>
+
+  <main class="page">
+    <aside class="filters">
+      <div class="filter-heading"><h2>FILTERS</h2><a href="#">Clear all</a></div>
+      <section class="filter-group">
+        <h3>CATEGORY</h3>
+        <label class="check-row"><span><input type="checkbox"> T-Shirts</span><small>128</small></label>
+        <label class="check-row"><span><input type="checkbox"> Shirts</span><small>64</small></label>
+        <label class="check-row"><span><input type="checkbox"> Hoodies</span><small>42</small></label>
+        <label class="check-row"><span><input type="checkbox"> Bottomwear</span><small>36</small></label>
+      </section>
+      <section class="filter-group">
+        <h3>SIZE</h3>
+        <div class="size-grid">
+          <button>XS</button><button>S</button><button>M</button>
+          <button>L</button><button>XL</button><button>XXL</button>
+        </div>
+      </section>
+      <section class="filter-group">
+        <h3>COLOUR</h3>
+        <label class="check-row"><span><input type="checkbox"><b class="swatch black"></b> Black</span><small>42</small></label>
+        <label class="check-row"><span><input type="checkbox"><b class="swatch white"></b> White</span><small>31</small></label>
+        <label class="check-row"><span><input type="checkbox"><b class="swatch olive"></b> Olive</span><small>18</small></label>
+        <label class="check-row"><span><input type="checkbox"><b class="swatch red"></b> Red</span><small>12</small></label>
+        <label class="check-row"><span><input type="checkbox"><b class="swatch beige"></b> Beige</span><small>15</small></label>
+      </section>
+      <section class="filter-group">
+        <h3>PRICE</h3>
+        <div class="price-label"><span>₹499</span><span>₹2,999</span></div>
+        <input class="range" type="range" min="499" max="2999" value="1800">
+      </section>
+      <p class="filter-note">Good basics. Better fits. Made for everyday.</p>
+    </aside>
+
+    <section class="catalog">
+      <div class="breadcrumb">Home <span>/</span> Men <span>/</span> T-Shirts</div>
+      <div class="catalog-heading">
+        <div><p class="eyebrow">THE EVERYDAY EDIT</p><h1>Men's T-Shirts <span>(24 items)</span></h1></div>
+        <select aria-label="Sort products">
+          <option>Sort: Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest First</option>
+        </select>
+      </div>
+
+      <div class="mobile-filter"><button>☷ Filters & Sort</button><span>24 products</span></div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image image-one"><span class="tag">BESTSELLER</span><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt black-shirt"><span>STAY<br>CURIOUS</span></div></div>
+          <div class="product-info"><p class="product-name">Stay Curious Graphic Tee</p><p class="product-type">Oversized · Heavyweight cotton</p><p class="price">₹1,299 <del>₹1,599</del></p><div class="dots"><i class="dot black"></i><i class="dot cream"></i><i class="dot green"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-two"><span class="tag">NEW</span><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt cream-shirt"><span>OFF<br>THE<br>GRID</span></div></div>
+          <div class="product-info"><p class="product-name">Off The Grid Tee</p><p class="product-type">Relaxed fit · Soft cotton</p><p class="price">₹1,099</p><div class="dots"><i class="dot cream"></i><i class="dot black"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-three"><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt green-shirt"><span>TAKE<br>IT EASY</span></div></div>
+          <div class="product-info"><p class="product-name">Take It Easy Oversized Tee</p><p class="product-type">Oversized · 240 GSM</p><p class="price">₹1,399</p><div class="dots"><i class="dot green"></i><i class="dot black"></i><i class="dot cream"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-four"><span class="tag">POPULAR</span><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt red-shirt"><span>NO<br>RUSH.</span></div></div>
+          <div class="product-info"><p class="product-name">No Rush Stripe Tee</p><p class="product-type">Regular fit · Cotton blend</p><p class="price">₹999</p><div class="dots"><i class="dot red"></i><i class="dot navy"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-five"><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt navy-shirt"><span>AFTER<br>HOURS</span></div></div>
+          <div class="product-info"><p class="product-name">After Hours Tee</p><p class="product-type">Boxy fit · Heavyweight cotton</p><p class="price">₹1,249</p><div class="dots"><i class="dot navy"></i><i class="dot black"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-six"><span class="tag">LIMITED</span><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt beige-shirt"><span>GOOD<br>THINGS<br>TAKE TIME</span></div></div>
+          <div class="product-info"><p class="product-name">Good Things Tee</p><p class="product-type">Relaxed fit · 100% cotton</p><p class="price">₹1,199</p><div class="dots"><i class="dot beige"></i><i class="dot green"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-seven"><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt grey-shirt"><span>LESS<br>NOISE</span></div></div>
+          <div class="product-info"><p class="product-name">Less Noise Minimal Tee</p><p class="product-type">Regular fit · Soft-touch cotton</p><p class="price">₹899</p><div class="dots"><i class="dot grey"></i><i class="dot black"></i><i class="dot cream"></i></div></div>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-eight"><button class="heart" aria-label="Add to wishlist">♡</button><div class="mock-shirt white-shirt"><span>MAKE<br>YOUR<br>MOVE</span></div></div>
+          <div class="product-info"><p class="product-name">Make Your Move Tee</p><p class="product-type">Oversized · 220 GSM</p><p class="price">₹1,299</p><div class="dots"><i class="dot cream"></i><i class="dot red"></i></div></div>
+        </article>
+      </div>
+
+      <div class="pagination"><button class="current">1</button><button>2</button><button>3</button><button class="next">Next →</button></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">THREAD<span>LINE</span></div><p>Thoughtful everyday clothing. Made to move with you.</p><small>© 2026 THREADLINE. All rights reserved.</small></footer>
+</body>
+</html>
